@@ -1,0 +1,55 @@
+// Переменные
+
+$maxWidthConteiner: 1142;
+$md: $maxWidthConteiner + 40;
+$md1: 950;
+$md1_1: $md1 + 30;
+
+
+$black: #0E1014;
+$white: #E4E5EA;
+$gray: #656566;
+$blue: #4077f3;
+
+// _____________________
+
+// Шаблоны
+
+%Montserrat {
+    font-family: "Montserrat", sans-serif;
+}
+
+%flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+%hover {
+    &:hover{
+        transition: all 0.2s ease-in-out;
+        color: $gray;
+    } 
+}
+
+%links {
+    font-weight: 500;
+    line-height: 19.36px;
+}
+
+%gradient {
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+%conteiner {
+    margin: 0 auto;
+    width: 100%;
+    max-width: $md + px;
+}
+
+// _____________________
+
+// Миксины
+// _____________________

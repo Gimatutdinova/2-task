@@ -1,0 +1,154 @@
+@import '/src/scss/var.scss';
+
+.footer {
+    padding: 47px 0 20px;
+    width: 100%;
+    height: 315px;
+    
+    &__top {
+        display: grid;
+        grid-template-columns: 293px 460px auto;
+
+        &_section {
+            &:last-child {
+                justify-self: flex-end;
+                text-align: end;
+            }
+        }
+
+        &_title {
+            margin: 0 0 20px;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 0.05em;
+            color: $gray;
+            text-transform: uppercase;
+        }
+
+        &_menu {
+            height: 155px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        &_item {
+            margin: 0 0 9.5px;
+            @extend %hover;
+            line-height: 19.36px;
+        }
+
+        &_phone {
+            @extend %hover;
+            @extend %links;
+        }
+
+        &_address {
+            margin: 1px;
+            @extend %hover;
+            line-height: 19.36px;
+        }
+
+        &_networks {
+            margin: 20px 0;
+        }
+    }
+
+    &__bottom {
+        margin: 10px 0 0;
+        float: right;
+        &_text {
+            width: 300px;
+            @extend %Montserrat;
+            font-size: 12px;
+            line-height: 19px;
+            text-align: end;
+
+            & > a {
+                @extend %hover;
+                border-bottom: 1px $white solid;
+
+                &:hover {
+                    border-bottom-color: $gray;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: ($md1_1 + px)) {
+    .footer {
+        margin: 0 0 0 1px;
+        height: 619px;
+        padding: 45px 0 60px;
+
+        &__top {
+            display: block;
+    
+            &_section {
+                margin: 0 0 17px;
+                &-0 {
+                    margin: 0 0 29px;
+                    height: 80px;
+
+                    & > .footer__top_menu > .footer__top_item {
+                        width: auto;
+                    }
+                }
+
+                &:last-child {
+                    justify-self: start;
+                    text-align: start;
+                }
+            }
+
+            &_title {
+                font-size: 12px;
+                line-height: 14.52px;
+            }
+    
+            &_menu {
+                width: 271px;
+            }
+    
+            &_item {
+                margin: 0 0 10px -1px;
+                padding: 0 30px 0 0;
+                width: 148px;
+                font-size: 14px;
+                line-height: 16.94px;
+            }
+
+            &_phone {
+                margin: 0 0 0 -1px;
+            }
+    
+            &_address {
+                margin: 0 0 0 -1px;
+                font-size: 14px;
+                line-height: 16.94px;
+            }
+
+            &_networks {
+                margin: 8px 0 10px;
+
+                & > a > img {
+                    width: 24px;
+                    height: 24px;
+                    object-fit: contain;
+                }
+            }
+        }
+    
+        &__bottom {
+            margin: 30px 0 0 -1px;
+            float: left;
+            &_text {
+                line-height: 19px;
+                text-align: start;
+            }
+        }
+    }
+}

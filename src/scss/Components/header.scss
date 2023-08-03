@@ -1,0 +1,94 @@
+@import '/src/scss/var.scss';
+
+.header {
+    margin: 58px 0 0 1px;
+    width: 100%;
+    height: 73px;
+    @extend %flex;
+
+    &__logo {
+        &_text {
+            padding: 10px 0 0;
+            width: 140px;
+            @extend %Montserrat;
+            font-weight: 30;
+            font-size: 10px;
+            line-height: 12.19px;
+        }
+    }
+
+    &__menu {
+        margin: 0 0 0 2.2%;
+        padding: 4px 0;
+        width: 502px;
+        @extend %flex;
+
+        &_item {
+            margin: 0 0 0 10px;
+            @extend %hover;
+            @extend %links;
+
+            &:first-child {
+                margin: 0;
+            }
+        }
+    }
+
+    &__phone {
+        margin: 0 20px 0 9.8%;
+        padding: 4px 0;
+        white-space: nowrap;
+        @extend %hover;
+        @extend %links;
+    }
+
+    &__networks {
+        padding: 2px 0;
+        width: 120px;
+        @extend %flex;
+
+        &_item {
+            margin: 0 10px 0 0;
+
+            &:last-child {
+                margin: -1px 0 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: ($md1_1 + px)) {
+    .header {
+        margin: 0 0 0 1px;
+        justify-content: start;
+        align-items: center;
+        height: 55px;
+  
+        &__logo {
+            display: none;
+        }
+    
+        &__menu {
+            margin: 0;
+            width: 98%;
+    
+            &_item {
+                margin: 0 0 0 16.5px;
+                font-size: 12px;
+                text-transform: uppercase;
+
+                &:last-child {
+                    display: none;
+                }
+            }
+        }
+    
+        &__phone {
+           display: none;
+        }
+    
+        &__networks {
+            display: none;
+        }
+    }
+}

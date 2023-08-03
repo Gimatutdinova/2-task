@@ -1,0 +1,3 @@
+import React from 'react';
+const address = <a href='https://www.google.com/maps/place/%D0%9F%D1%83%D1%82%D0%B5%D0%B2%D0%BE%D0%B9+%D0%BF%D1%80-%D0%B4,+3%D0%A11,+%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0,+127410/@55.873427,37.5753299,17z/data=!4m6!3m5!1s0x46b5370d42c055a3:0xfe62d1376599cb4c!8m2!3d55.873427!4d37.5753299!16s%2Fg%2F11j9m76z8b?entry=ttu'>{'Москва, Путевой проезд 3с1, к 902'}</a>
+export default address;
